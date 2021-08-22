@@ -49,7 +49,7 @@ module.exports = {
     // },
     
     develop: {
-      // port: 7545 
+      // port: 7545,  
       port: 8545
     },
 

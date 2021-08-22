@@ -13,6 +13,7 @@ const App = {
       // get contract instance
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = metaCoinArtifact.networks[networkId];
+      // use Metamask to provide the web3 library
       this.meta = new web3.eth.Contract(
         metaCoinArtifact.abi,
         deployedNetwork.address,

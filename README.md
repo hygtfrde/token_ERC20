@@ -17,3 +17,6 @@ Ethereum-style token build on the ERC20 Standard (https://ethereum.org/en/develo
 
 ### Build
 * Create a build for deployment with: ```truffle compile``` 
+
+### Deployment 
+* Migrate and deploy contracts with: ```truffle migrate``` 

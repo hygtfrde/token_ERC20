@@ -9,12 +9,19 @@ import "./ConvertLib.sol";
 // token, see: https://github.com/ConsenSys/Tokens. Cheers!
 
 contract MetaCoin {
+    // mapping is key-value storage
+    // addresses map to unsigned integers 
     mapping (address => uint) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     constructor() public {
         balances[msg.sender] = 10000;
+    }
+
+    // award tx.origin or owner for deployment 
+    function MetaCoin() public {
+        balances[tx.origin] = 99999; 
     }
 
     function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
