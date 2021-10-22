@@ -18,7 +18,6 @@ const App = {
         metaCoinArtifact.abi,
         deployedNetwork.address,
       );
-
       // get accounts
       const accounts = await web3.eth.getAccounts();
       this.account = accounts[0];
