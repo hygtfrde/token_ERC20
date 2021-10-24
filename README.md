@@ -1,4 +1,4 @@
-# Crypto Token ERC20
+# Creating and Deploying ERC20 Tokens
 Ethereum-style token build on the ERC20 Standard (https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 
 ### Programming Langauges 
@@ -20,3 +20,5 @@ Ethereum-style token build on the ERC20 Standard (https://ethereum.org/en/develo
 
 ### Deployment 
 * Migrate and deploy contracts with: ```truffle migrate``` 
+
+### Test Token 
